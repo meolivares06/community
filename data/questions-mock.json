@@ -10,7 +10,7 @@
       "vote_down": 7,
       "grade": "6",
       "username": "juan.c23",
-      "pinned": true
+      "pinned": false
     },
     {
       "id": 2,
@@ -34,7 +34,7 @@
       "vote_down": 22,
       "grade": "6",
       "username": "juliaaraujo",
-      "pinned": true
+      "pinned": false
     },
     {
       "id": 4,
@@ -46,7 +46,7 @@
       "vote_down": 17,
       "grade": "6",
       "username": "juan.c23",
-      "pinned": true
+      "pinned": false
     },
     {
       "title": "dsdf",
@@ -65,7 +65,7 @@
       "description": "kkjlkj",
       "vote_up": 0,
       "vote_down": 0,
-      "pinned": true,
+      "pinned": false,
       "comments_qt": 0,
       "grade": "6",
       "category": "Matemática",
