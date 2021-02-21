@@ -66,6 +66,9 @@
 }
 
 
+.q {
+    display: none;
+}
 @media screen and (min-width: 768px){
 
   .question{
@@ -84,6 +87,10 @@
   .question__description {
     width: 449px;
     max-width: 449px;
+  }
+  
+  .q {
+    display: inline;
   }
 }
 

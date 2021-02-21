@@ -6,7 +6,7 @@
     <a href="" class="btn" (click)="onVoteUp($event)"><img src="assets/thumbs-up.svg" alt="thumbs-up"></a>
     <a href="" class="btn" (click)="onVoteDown($event)"><img src="assets/thumbs-down.svg" alt="thumbs-down"></a>
   </div>
-  <div class="question__label text--secondary question__label--text"><span class="question__description--text">Pregunta {{question.username}} en</span> &nbsp;<span class="question__category">{{question.category}} {{question.grade}}</span></div>
+  <div class="question__label text--secondary question__label--text"><span class="question__description--text"><span class="q">Pregunta</span> {{question.username}} en</span> &nbsp;<span class="question__category">{{question.category}} {{question.grade}}</span></div>
   <div class="question__btn-comments">
     <a href="" class="btn" (click)="onComment($event)"> <img src="assets/message-circle.svg" alt="messages"> </a>
     <div class="question__comments-qt">{{ question.comments_qt}}</div>
