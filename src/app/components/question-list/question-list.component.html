@@ -1,0 +1,20 @@
+
+<app-header></app-header>
+
+<app-tabs></app-tabs>
+<div *ngIf="(loading$ | async) == false">
+<div *ngFor="let question of question_list$ | async" >
+  <app-question [question]="question" (vote_up)="onVoteUp(question)" (vote_down)="onVoteDown(question)" (pin)="onChangePin(question)"></app-question>
+  <div class="separator"></div>
+</div>
+
+<div>
+  <button class="btn--add-question" (click)="onNewQuestion($event)">
+    <img src="assets/pencil.svg" alt="">
+  </button>
+</div>
+</div>
+
+<div *ngIf="(loading$ | async) == true" style="display: flex;flex-direction: column;justify-content: center;align-items: center">
+  <h4>Loading...</h4>
+  </div>

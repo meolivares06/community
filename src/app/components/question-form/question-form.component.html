@@ -1,0 +1,23 @@
+<div class="forwrapper">
+  <form (ngSubmit)="onAddQuestion(form)" #form="ngForm">
+    <h1 class="form__title">Haz un pregunta</h1>
+    <div class="close" (click)="onCancel()"><img src="assets/close.svg" alt=""></div>
+    <div class="btn-close">
+      <button class="btn-cancel" (click)="onCancel()">Cancelar</button>
+    </div>
+
+    <div class="formgroup">
+      <label for="question__title">Título de publicación</label>
+      <input class="form-field" type="text" id="question__title" name="question__title" placeholder="Escribe tu título aquí" ngModel/>
+    </div>
+
+    <div class="formgroup">
+      <label for="question__text">Publicación</label>
+      <textarea class="form-field" id="question__text" name="question__text" placeholder="Escribe tu publicación aquí" ngModel></textarea>
+    </div>
+
+    <div class="formgrup">
+      <button type="submit" class="btn btn__publicar">Publicar</button>
+    </div>
+  </form>
+</div>

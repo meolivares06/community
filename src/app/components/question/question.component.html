@@ -1,0 +1,22 @@
+<div class="question">
+  <div class="question__title question__title--text">{{question.title}}</div>
+  <div class="question__description text--secondary question__description--text">{{ question.description}}</div>
+  <div class="question__user-avatar question__user-avatar--look" [ngClass]="currentClasses"><img src="assets/front.svg" alt=""></div>
+  <div class="question__thumbs">
+    <a href="" class="btn" (click)="onVoteUp($event)"><img src="assets/thumbs-up.svg" alt="thumbs-up"></a>
+    <a href="" class="btn" (click)="onVoteDown($event)"><img src="assets/thumbs-down.svg" alt="thumbs-down"></a>
+  </div>
+  <div class="question__label text--secondary question__label--text">{{question.username}} en <span class="question__category">{{question.category}} {{question.grade}}</span></div>
+  <div class="question__btn-comments">
+    <a href="" class="btn" (click)="onComment($event)"> <img src="assets/message-circle.svg" alt="messages"> </a>
+    <div class="question__comments-qt">{{ question.comments_qt}}</div>
+  </div>
+  <div class="question__btn-share">
+    <a href="" class="btn" (click)="onShare($event)"> <img src="assets/share.svg" alt="messages"> </a>
+  </div>
+  <div class="question__btn-pin">
+    <a href="" class="btn" (click)="onChangePinned($event, false)"> <img src="assets/start.svg" alt="" *ngIf="question.pinned"></a>
+
+    <a href="" class="btn" (click)="onChangePinned($event, true)"> <img src="assets/start-blank.svg" alt="" *ngIf="question.pinned == false"></a>
+  </div>
+</div>

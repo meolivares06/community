@@ -1,0 +1,30 @@
+.navigation{
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.navigation li a{
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  font-family: Inter Regular;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-align: center;
+
+  color: #3843D0;
+}
+
+.navigation li a.is-active{
+  border-bottom: 2px solid #3843D0;
+  padding-bottom: 8px;
+}
+
+nav{
+   border-bottom: 1px solid #DBDBDB;
+}
