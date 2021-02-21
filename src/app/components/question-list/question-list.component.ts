@@ -39,7 +39,12 @@ export class QuestionListComponent implements OnInit, OnDestroy {
         return this.question_list$
       })
     ).subscribe(
-      (response) => this.loading.next(false)
+      (response) => {
+        console.log(response)
+        this.question_list$ = this.questionManagerService.getList(this.filter)
+        this.loading.next(false)
+      },
+      (error) => console.log(error)
     )
 
 
@@ -57,14 +62,22 @@ export class QuestionListComponent implements OnInit, OnDestroy {
 
   onVoteUp(question: Question) {
     this.questionManagerService.voteUp(question).subscribe(
-      (response) => console.log(response),
+      (response) => {
+        console.log(response)
+        this.question_list$ = this.questionManagerService.getList(this.filter)
+        this.loading.next(false)
+      },
       (error) => console.log(error)
     )
   }
 
   onVoteDown(question: Question) {
     this.questionManagerService.voteDown(question).subscribe(
-      (response) => console.log(response),
+      (response) => {
+        console.log(response)
+        this.question_list$ = this.questionManagerService.getList(this.filter)
+        this.loading.next(false)
+      },
       (error) => console.log(error)
     )
   }

@@ -1,5 +1,6 @@
 .forwrapper{
   position: relative;
+    max-width: 382px;
 }
 
 .close{
@@ -120,11 +121,31 @@ textarea.form-field {
 
 @media screen and (min-width: 768px) {
 
+  .forwrapper{
+    max-width: 576px;
+    position: relative;
+    margin: 0 auto;
+  }
   .btn-cancel{
     display: block;
+    width: 125px;
+    height: 36px;
   }
 
   .close{
     display: none;
+  }
+
+
+  .form-field{
+    max-width: 576px;
+    width: 98%;
+  }
+
+  .btn__publicar{
+    width: 118px;
+    height: 36px;
+    position: absolute;
+    right: 15px;
   }
 }

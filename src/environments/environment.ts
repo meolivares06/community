@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   // Url of service
-  url: 'http://localhost:3000'
+  url: 'http://localhost:8000'
 };
 
 /*
