@@ -16,7 +16,7 @@
 .question{
   display: grid;
   gap: 10px;
-  grid-template-columns: 64px auto 56px 24px;
+  grid-template-columns: 78px auto 56px 24px;
   grid-template-rows: auto auto auto;
 
   grid-template-areas: "avatar title   title   title"
@@ -44,6 +44,7 @@
 
   display: flex;
   justify-content: space-between;
+  width: 68px;
 }
 
 .question__label {
@@ -72,7 +73,7 @@
 @media screen and (min-width: 768px){
 
   .question{
-    grid-template-columns: 64px 56px auto 24px 24px;
+    grid-template-columns: 78px 56px auto 24px 24px;
     grid-template-areas: "avatar  title   title   comments comments"
                          "avatar  snippet snippet snippet  snippet"
                          "avatar  thumbs  label   share    pin";
@@ -92,6 +93,10 @@
   .q {
     display: inline;
   }
+  
+  .question__thumbs{
+  width: 56px;
+}
 }
 
 /* Visuals changes*/
